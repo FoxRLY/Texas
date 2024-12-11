@@ -1,6 +1,5 @@
 package org.example.texas;
 
-import java.awt.SystemTray;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -59,8 +58,6 @@ public class PokerHand implements Comparable<PokerHand> {
 
     boolean sequenced = isHandSequenced(cards);
     boolean oneSuit = isHandOfOneSuit(cards);
-    System.out.println("Sequenced: " + sequenced);
-    System.out.println("One Suit: " + oneSuit);
 
 
     if (sequenced) {
@@ -131,7 +128,7 @@ public class PokerHand implements Comparable<PokerHand> {
       CardValue lowestPair;
       CardValue kicker;
 
-      if (pairList.get(1).getKey().compareTo(pairList.get(2).getKey()) > 0 ) {
+      if (pairList.get(1).getKey().compareTo(pairList.get(2).getKey()) > 0) {
         highestPair = pairList.get(1).getKey();
         lowestPair = pairList.get(2).getKey();
       } else {
@@ -162,10 +159,8 @@ public class PokerHand implements Comparable<PokerHand> {
   }
 
   private boolean isHandSequenced(List<Card> cards) {
-    System.out.println(cards);
     for (int i = 0; i < 4; i++) {
-      System.out.println(cards.get(i+1).getCardValue().ordinal() - cards.get(i).getCardValue().ordinal());
-      if (cards.get(i+1).getCardValue().ordinal() - cards.get(i).getCardValue().ordinal() != 1) {
+      if (cards.get(i + 1).getCardValue().ordinal() - cards.get(i).getCardValue().ordinal() != 1) {
         return false;
       }
     }
