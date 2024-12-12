@@ -1,6 +1,6 @@
 package org.example.texas.tier;
 
-import org.example.texas.CardValue;
+import org.example.texas.card.CardValue;
 
 public class PairTier implements HandTier{
   private final CardValue pairType;

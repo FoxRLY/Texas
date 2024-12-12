@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import org.example.texas.PokerHand;
+import org.example.texas.hand.PokerHand;
 
 public class Main {
   public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class Main {
     hands.add(new PokerHand("9H TH JH QH KH"));
     hands.add(new PokerHand("KS 2H 5C JD TD"));
     hands.add(new PokerHand("2C 3C AC 4C 5C"));
+    
     Collections.sort(hands);
 
     for (var hand : hands) {

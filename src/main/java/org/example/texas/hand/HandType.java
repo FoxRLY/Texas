@@ -1,4 +1,4 @@
-package org.example.texas;
+package org.example.texas.hand;
 
 public enum HandType {
   HIGH_CARD,

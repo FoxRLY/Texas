@@ -1,4 +1,4 @@
-package org.example.texas;
+package org.example.texas.card;
 
 import java.util.Arrays;
 

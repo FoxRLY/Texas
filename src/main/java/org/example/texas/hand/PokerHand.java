@@ -1,10 +1,12 @@
-package org.example.texas;
+package org.example.texas.hand;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import org.example.texas.tier.Card;
+import org.example.texas.card.Card;
+import org.example.texas.card.CardSuit;
+import org.example.texas.card.CardValue;
 import org.example.texas.tier.FlushRoyalTier;
 import org.example.texas.tier.FlushTier;
 import org.example.texas.tier.FourTier;
@@ -34,6 +36,10 @@ public class PokerHand implements Comparable<PokerHand> {
 
   public HandTier getHandTier() {
     return this.tier;
+  }
+
+  public String getHandString() {
+    return this.handString;
   }
 
   @Override

@@ -1,7 +1,7 @@
 package org.example.texas.tier;
 
 import java.util.List;
-import org.example.texas.CardValue;
+import org.example.texas.card.CardValue;
 
 public class FlushTier implements HandTier {
 

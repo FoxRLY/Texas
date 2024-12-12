@@ -1,7 +1,4 @@
-package org.example.texas.tier;
-
-import org.example.texas.CardSuit;
-import org.example.texas.CardValue;
+package org.example.texas.card;
 
 public class Card implements Comparable<Card> {
 

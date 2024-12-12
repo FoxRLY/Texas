@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import org.example.texas.hand.HandType;
+import org.example.texas.hand.PokerHand;
 import org.junit.jupiter.api.Test;
 
 class PokerHandTest {
